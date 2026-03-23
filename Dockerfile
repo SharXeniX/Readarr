@@ -22,7 +22,7 @@ RUN dotnet msbuild -restore src/Readarr.sln \
 
 # Stage 3: Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
-LABEL maintainer="SharXeniX"
+LABEL org.opencontainers.image.source="https://github.com/SharXeniX/Readarr"
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \

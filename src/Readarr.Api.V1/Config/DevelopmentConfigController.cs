@@ -23,7 +23,6 @@ namespace Prowlarr.Api.V1.Config
             _configFileProvider = configFileProvider;
             _configService = configService;
 
-            SharedValidator.RuleFor(c => c.MetadataSource).IsValidUrl().When(c => !c.MetadataSource.IsNullOrWhiteSpace());
         }
 
         protected override DevelopmentConfigResource GetResourceById(int id)

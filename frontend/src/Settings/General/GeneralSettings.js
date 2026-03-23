@@ -14,6 +14,7 @@ import AnalyticSettings from './AnalyticSettings';
 import BackupSettings from './BackupSettings';
 import HostSettings from './HostSettings';
 import LoggingSettings from './LoggingSettings';
+import MetadataSettings from './MetadataSettings';
 import ProxySettings from './ProxySettings';
 import SecuritySettings from './SecuritySettings';
 import UpdateSettings from './UpdateSettings';
@@ -140,6 +141,12 @@ class GeneralSettings extends Component {
                   settings={settings}
                   isWindows={isWindows}
                   mode={mode}
+                  onInputChange={onInputChange}
+                />
+
+                <MetadataSettings
+                  advancedSettings={advancedSettings}
+                  settings={settings}
                   onInputChange={onInputChange}
                 />
 
